@@ -1,0 +1,28 @@
+<root annotationID="0" passageID="answers-20111108075238AAOhbL0_ans-0004_0">
+  <attributes />
+  <extra format="ucca" />
+  <layer layerID="0">
+    <attributes />
+    <extra doc="[[[17625953895647619387, 9517787776168871912, 14968597813295776895, 101, 0, 2, 8206900633647566924, 0, 13735693502083210583, 15817570140490810055, 15470994833975328999]]]" />
+    <node ID="0.1" type="Word">
+      <attributes paragraph="1" paragraph_position="1" text="http://www.google.com/search?hl=en&amp;rlz=1G1GGLQ_ENUS359&amp;q=gunther+uecker+biography&amp;gs_sm=c&amp;gs_upl=484l484l0l5093l1l1l0l0l0l0l328l328l3-1l1l0&amp;um=1&amp;ie=UTF-8&amp;tbm=isch&amp;source=og&amp;sa=N&amp;tab=wi&amp;biw=1221&amp;bih=756&amp;sei=XVG5TqrrGoXK2AXG0ry-Bw#um=1&amp;hl=en&amp;rlz=1G1GGLQ_ENUS359&amp;tbm=isch&amp;sa=1&amp;q=gunther+uecker+artist&amp;pbx=1&amp;oq=gunther+uecker+&amp;aq=1S&amp;aqi=g1g-S3&amp;aql=&amp;gs_sm=c&amp;gs_upl=10219l10219l0l13797l1l1l0l0l0l0l125l125l0.1l1l0&amp;bav=on.2,or.r_gc.r_pw.,cf.osb&amp;fp=13ddcdc64cbf5fd&amp;biw=1221&amp;bih=756" />
+    </node>
+  </layer>
+  <layer layerID="1">
+    <attributes />
+    <node ID="1.1" type="FN">
+      <attributes />
+      <edge toID="1.2" type="P">
+        <attributes />
+        <category tag="P" />
+      </edge>
+    </node>
+    <node ID="1.2" type="FN">
+      <attributes />
+      <edge toID="0.1" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+  </layer>
+</root>

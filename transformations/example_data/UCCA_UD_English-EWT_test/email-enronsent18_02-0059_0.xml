@@ -1,0 +1,49 @@
+<root annotationID="0" passageID="email-enronsent18_02-0059_0">
+  <attributes />
+  <extra format="ucca" />
+  <layer layerID="0">
+    <attributes />
+    <extra doc="[[[14543645935076270485, 14543645935076270485, 15794550382381185553, 96, 380, 3, 7037928807040764755, 2, 16072095006890171862, 10926178514336144719, 14431812100313486463], [18003918085672799305, 18003918085672799305, 15794550382381185553, 96, 380, 1, 7037928807040764755, 1, 101, 18003918085672799305, 18003918085672799305], [10645195694380659330, 10645195694380659330, 15794550382381185553, 96, 380, 1, 8206900633647566924, 0, 16072095006890171862, 8656007278630577320, 12754585123372742969]]]" />
+    <node ID="0.1" type="Word">
+      <attributes paragraph="1" paragraph_position="1" text="Vince" />
+    </node>
+    <node ID="0.2" type="Word">
+      <attributes paragraph="1" paragraph_position="2" text="J" />
+    </node>
+    <node ID="0.3" type="Word">
+      <attributes paragraph="1" paragraph_position="3" text="Kaminski" />
+    </node>
+  </layer>
+  <layer layerID="1">
+    <attributes />
+    <node ID="1.1" type="FN">
+      <attributes />
+      <edge toID="1.2" type="H">
+        <attributes />
+        <category tag="H" />
+      </edge>
+    </node>
+    <node ID="1.2" type="FN">
+      <attributes />
+      <edge toID="1.3" type="A">
+        <attributes />
+        <category tag="A" />
+      </edge>
+    </node>
+    <node ID="1.3" type="FN">
+      <attributes />
+      <edge toID="0.1" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+      <edge toID="0.2" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+      <edge toID="0.3" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+  </layer>
+</root>

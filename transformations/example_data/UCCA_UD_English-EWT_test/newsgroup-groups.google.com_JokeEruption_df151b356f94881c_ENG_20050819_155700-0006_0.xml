@@ -1,0 +1,42 @@
+<root annotationID="0" passageID="newsgroup-groups.google.com_JokeEruption_df151b356f94881c_ENG_20050819_155700-0006_0">
+  <attributes />
+  <extra format="ucca" />
+  <layer layerID="0">
+    <attributes />
+    <extra doc="[[[13068962492010761897, 13068962492010761897, 15794550382381185553, 96, 380, 3, 8206900633647566924, 0, 18200729499220207786, 14862748245026736845, 13068962492010761897], [6176012668621382159, 6176012668621382159, 14872845191859177490, 97, 0, 2, 445, -1, 6176012668621382159, 11532473245541075862, 6176012668621382159]]]" />
+    <node ID="0.1" type="Word">
+      <attributes paragraph="1" paragraph_position="1" text="Amy" />
+    </node>
+    <node ID="0.2" type="Punctuation">
+      <attributes paragraph="1" paragraph_position="2" text=":-)" />
+    </node>
+  </layer>
+  <layer layerID="1">
+    <attributes />
+    <node ID="1.1" type="FN">
+      <attributes />
+      <edge toID="1.2" type="H">
+        <attributes />
+        <category tag="H" />
+      </edge>
+      <edge toID="1.3" type="U">
+        <attributes />
+        <category tag="U" />
+      </edge>
+    </node>
+    <node ID="1.2" type="FN">
+      <attributes />
+      <edge toID="0.1" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+    <node ID="1.3" type="PNCT">
+      <attributes />
+      <edge toID="0.2" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+  </layer>
+</root>

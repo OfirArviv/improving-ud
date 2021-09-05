@@ -1,0 +1,28 @@
+<root annotationID="0" passageID="newsgroup-groups.google.com_JokeEruption_df151b356f94881c_ENG_20050819_155700-0002_0">
+  <attributes />
+  <extra format="ucca" />
+  <layer layerID="0">
+    <attributes />
+    <extra doc="[[[8828121253400083903, 8828121253400083903, 14968597813295776895, 101, 0, 2, 8206900633647566924, 0, 5093501200496586730, 5097672513440128799, 16997456328864395068]]]" />
+    <node ID="0.1" type="Word">
+      <attributes paragraph="1" paragraph_position="1" text="image001.jpg" />
+    </node>
+  </layer>
+  <layer layerID="1">
+    <attributes />
+    <node ID="1.1" type="FN">
+      <attributes />
+      <edge toID="1.2" type="A">
+        <attributes />
+        <category tag="A" />
+      </edge>
+    </node>
+    <node ID="1.2" type="FN">
+      <attributes />
+      <edge toID="0.1" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+  </layer>
+</root>

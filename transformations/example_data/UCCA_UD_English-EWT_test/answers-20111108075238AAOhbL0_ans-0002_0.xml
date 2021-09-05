@@ -1,0 +1,28 @@
+<root annotationID="0" passageID="answers-20111108075238AAOhbL0_ans-0002_0">
+  <attributes />
+  <extra format="ucca" />
+  <layer layerID="0">
+    <attributes />
+    <extra doc="[[[9524231386826083312, 1257784441484145037, 8812103347613839895, 101, 0, 2, 8206900633647566924, 0, 15606190312189469966, 15817570140490810055, 9930496526604702357]]]" />
+    <node ID="0.1" type="Word">
+      <attributes paragraph="1" paragraph_position="1" text="http://www.kettererkunst.com/bio/GuntherUecker-1930.shtml" />
+    </node>
+  </layer>
+  <layer layerID="1">
+    <attributes />
+    <node ID="1.1" type="FN">
+      <attributes />
+      <edge toID="1.2" type="S">
+        <attributes />
+        <category tag="S" />
+      </edge>
+    </node>
+    <node ID="1.2" type="FN">
+      <attributes />
+      <edge toID="0.1" type="Terminal">
+        <attributes />
+        <category tag="Terminal" />
+      </edge>
+    </node>
+  </layer>
+</root>
