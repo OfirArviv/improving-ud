@@ -444,12 +444,12 @@ def experiment_1_base_labeled_score(lang: str, model_num: int, with_pos: bool, u
     return df
 
 
-def experiment_1(use_supervised_parse: bool):
+def experiment_1(use_supervised_parse: bool, language: str):
     with_pos = None  # Param removed
     df_list = []
     std_df_list = []
-    for lang in ["ru", "fr", "zh", "jp", "ko", "ar"]:
-        print(f'Evaluating {lang}')
+    for lang in [language]:
+        # print(f'Evaluating {lang}')
         lang_df_list = []
         for i in range(10):
             # print(f'Evaluating model {i + 1}...')
@@ -473,7 +473,7 @@ def experiment_1(use_supervised_parse: bool):
 
         std_df_list.append(std_df)
 
-    print("Done!")
+    # print("Done!")
     df = pd.concat(df_list, axis=1)
     std_df = pd.concat(std_df_list, axis=1)
     print(df)
@@ -567,12 +567,12 @@ def experiment_3_base_v2(lang: str, model_num: int, with_pos: bool, is_projectio
     return df
 
 
-def experiment_3(is_projection_pool: bool):
+def experiment_3(is_projection_pool: bool, language: str):
     with_pos = None  # Param removed
     df_list = []
     std_dict = {}
-    for lang in ["ru", "fr", "zh", "jp", "ko", "ar"]:
-        print(f'Evaluating {lang}...')
+    for lang in [language]:
+        # print(f'Evaluating {lang}...')
         lang_df_list = []
         for i in range(10):
             # print(f'Evaluating model {i + 1}...')
@@ -583,24 +583,28 @@ def experiment_3(is_projection_pool: bool):
         std_df = pd.concat(lang_df_list, axis=0).std(axis=0)
         std_dict[lang] = std_df
 
-    print("Done!")
+    # print("Done!")
     df = pd.concat(df_list, axis=0)
     print(df)
 
 
 if __name__ == '__main__':
+    argparser = argparse.ArgumentParser(description="Evaluating method for Universal Dependencies")
+    argparser.add_argument("-l", "--language", required=True)
+    args = argparser.parse_args()
+
     pd.set_option('display.max_columns', 1000)
     print("Edge Stability Categories Stats - Supervised Parse")
     print("--------------------------------------------------")
-    experiment_1(use_supervised_parse=True)
+    experiment_1(use_supervised_parse=True, language=args.language)
     print("Edge Stability Categories Stats - Zero-Shot Parse")
     print("--------------------------------------------------")
-    experiment_1(use_supervised_parse=False)
+    experiment_1(use_supervised_parse=False, language=args.language)
     print("Aligned Edges Stats - Zero-Shot Parse")
     print("-------------------------------------")
-    experiment_3(is_projection_pool=True)
+    experiment_3(is_projection_pool=True, language=args.language)
     print("Partially Aligned Edges Stats - Zero-Shot Parse")
     print("-----------------------------------------------")
-    experiment_3(is_projection_pool=False)
+    experiment_3(is_projection_pool=False, language=args.language)
 
     exit()
