@@ -110,7 +110,7 @@ def get_aligned_edges_data_v2(lang: str, model_num: int,  with_pos:bool, use_sup
     if use_supervised_parse:
         zero_shot_prediction_path = f'{Config.pud_zero_shot_prediction_dir}/model_{model_num}/{lang2}_pud-ud-test.conllu.prediction'
     else:
-        zero_shot_prediction_path = f'{Config.pud_zero_shot_prediction_dir}/model_{model_num}/{lang2}_pud-ud-test.conllu.prediction'
+        zero_shot_prediction_path = f'{Config.pud_supervised_prediction_dir}/model_{model_num}/{lang2}_pud-ud-test.conllu.prediction'
     with open(zero_shot_prediction_path, 'r', encoding="utf-8") as prediction_file:
         zero_shot_prediction = list(parse_incr(prediction_file))
 
